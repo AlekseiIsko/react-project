@@ -1,0 +1,26 @@
+[
+    {
+        "image-name": "man.svg",
+        "title": "Regularly",
+        "after-title": "This is our standard – what we do with every order. We can also add custom services to customize your cleaning offer.",
+        "description": "We wash the floor and wipe the baseboards Carpets vacuuming (with your vacuum cleaner if you don’t have a vacuum cleaner don’t worry, we brush carpets) Wipe all accessible surfaces Wipe the switches and door handles We clean mirrors and glass surfaces We collect and take out the garbage"
+    },
+    {
+        "image-name": "sofa.svg",
+        "title": "Deep",
+        "after-title": "When our team comes to you, is managed by the manager. The manager evaluates the duration, checks the quality and answers all your questions.",
+        "description": "Wipe all accessible surfaces, switches and door handles Washing windows, mirrors and glass surfaces Washing furniture inside and outside Wiping the walls Washing chandeliers and lamps We wash the floor, wipe the baseboards and vacuum the carpet We take out the garbage"
+    },
+    {
+        "image-name": "girlbluejeans.svg",
+        "title": "Office",
+        "after-title": "The cleaner comes every morning or evening to restore cleanliness and order.",
+        "description": "Wipe all accessible surfaces, switches and door handles Washing windows, mirrors and glass surfaces Washing furniture inside and outside Wiping the walls Washing chandeliers and lamps We wash the floor, wipe the baseboards and vacuum the carpet We take out the garbage"
+    },
+    {
+        "image-name": "wachesthings.svg",
+        "title": "Windows",
+        "after-title": "Our employee arrives with everything necessary at the agreed time and gets to work immediately.",
+        "description": "Wash glass on both sides We clean the frame inside and out Washing mosquito nets Wipe the window sills"
+    }
+]
