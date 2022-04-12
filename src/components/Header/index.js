@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import logo from "../../img/logo.svg";
 
-const Header = () => {
+const Header = ({scrollToTarget}) => {
   const [menuState, setMenuState] = useState(false);
 
   return (
@@ -12,13 +12,10 @@ const Header = () => {
       </div>
       <ul>
         <li>
-          <a href="#">Home</a>
+          <a href="#about">About</a>
         </li>
         <li>
-          <a href="#">Book</a>
-        </li>
-        <li>
-          <a href="#">Join our team</a>
+          <a href="#book">Book</a>
         </li>
         <li>
           <a href="#" className="sign-up">

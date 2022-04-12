@@ -1,3 +1,4 @@
+import React from "react";
 import wetFloor from "../../img/wetfloor.svg";
 
 const Main = () => {
