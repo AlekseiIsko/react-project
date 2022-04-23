@@ -1,5 +1,5 @@
 import React, {useContext} from "react";
-import {TabsContext} from '../../App';
+import {TabsContext} from '../../Home';
 import tabContent from '../../tab-content.json';
 
 import man from '../../img/man.svg';

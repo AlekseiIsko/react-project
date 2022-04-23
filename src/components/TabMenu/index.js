@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import {TabsContext} from '../../App';
+import {TabsContext} from '../../Home';
 
 const tabMenuList = [
   "Regularly Cleaning",

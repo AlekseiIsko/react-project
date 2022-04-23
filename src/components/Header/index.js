@@ -1,8 +1,9 @@
 import React from "react";
+import {Link} from "react-router-dom";
 import { useState } from "react";
 import logo from "../../img/logo.svg";
 
-const Header = ({scrollToTarget}) => {
+const Header = () => {
   const [menuState, setMenuState] = useState(false);
 
   return (
@@ -12,15 +13,7 @@ const Header = ({scrollToTarget}) => {
       </div>
       <ul>
         <li>
-          <a href="#about">About</a>
-        </li>
-        <li>
-          <a href="#book">Book</a>
-        </li>
-        <li>
-          <a href="#" className="sign-up">
-            Sign up
-          </a>
+          <Link to="/login" className="sign-up">Login</Link>
         </li>
       </ul>
       <button

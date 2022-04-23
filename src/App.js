@@ -1,9 +1,17 @@
 import React, { createContext, useState, useEffect } from "react";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Link,
+  Redirect,
+} from "react-router-dom";
+import Home from "./Home";
+import SignUp from "./SignUp";
+import Login from "./Login";
+import { AuthContextProvider, useAuthState } from "./firebase";
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
-import { Header, Main, TabMenu, TabContent, Book, Footer } from "./components";
-
-export const TabsContext = createContext();
 
 const firebaseConfig = {
   apiKey: "AIzaSyABlLQi0iUlVGlUe7vtsxCOF_jAGqf2J5w",
@@ -12,36 +20,26 @@ const firebaseConfig = {
   storageBucket: "project-1563f.appspot.com",
   messagingSenderId: "46650209906",
   appId: "1:46650209906:web:223d901da797401c7df4eb",
-  measurementId: "G-R62XY3T2ER"
+  measurementId: "G-R62XY3T2ER",
 };
 
-// Initialize Firebase
-
 const App = () => {
-  const [activeTab, setActiveTab] = useState(0);
-
-  useEffect(() => {
-    const app = initializeApp(firebaseConfig);
-    const analytics = getAnalytics(app);
-  }, []);
+    useEffect(() => {
+      const app = initializeApp(firebaseConfig);
+      // const db = getFirestore(app);
+      // const analytics = getAnalytics(app);
+    }, []);
 
   return (
-    <div className="App">
-      <section className="main">
-        <div className="container">
-          <Header menuState setMenuState />
-          <Main />
-        </div>
-      </section>
-      <section className="second-section">
-        <TabsContext.Provider value={{ activeTab, setActiveTab }}>
-          <TabMenu />
-          <TabContent />
-        </TabsContext.Provider>
-      </section>
-      <Book />
-      <Footer />
-    </div>
+    <AuthContextProvider>
+      <Router>
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/signup" element={<SignUp />} />
+          <Route exact path="/login" element={<Login />} />
+        </Routes>
+      </Router>
+    </AuthContextProvider>
   );
 };
 
