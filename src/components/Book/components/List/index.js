@@ -1,4 +1,8 @@
 import React from "react";
+import girl1 from "../../../../img/girl1.png";
+import girl2 from "../../../../img/girl2.png";
+import girl3 from "../../../../img/girl3.png";
+import girl4 from "../../../../img/girl4.png";
 
 const List = () => {
   return (
@@ -7,7 +11,7 @@ const List = () => {
       <div className="avalible-people">
         <div>
           <div className="photo">
-            <img src="img/girl1.png" alt="photo" />
+            <img src={girl1} alt="photo" />
           </div>
           <div className="name">
             <h3>Albina</h3>
@@ -38,7 +42,7 @@ const List = () => {
         </div>
         <div>
           <div className="photo">
-            <img src="img/girl2.png" alt="photo" />
+            <img src={girl2} alt="photo" />
           </div>
           <div className="name">
             <h3>Kristina</h3>
@@ -69,7 +73,7 @@ const List = () => {
         </div>
         <div>
           <div className="photo">
-            <img src="img/girl3.png" alt="photo" />
+            <img src={girl3} alt="photo" />
           </div>
           <div className="name">
             <h3>Grace</h3>
@@ -100,7 +104,7 @@ const List = () => {
         </div>
         <div>
           <div className="photo">
-            <img src="img/girl4.png" alt="photo" />
+            <img src={girl4} alt="photo" />
           </div>
           <div className="name">
             <h3>Jane</h3>
